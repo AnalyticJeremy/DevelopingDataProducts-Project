@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Iris-o-Matic</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Iris-o-Matic">
+  <meta name="author" content="Jeremy Peach">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Iris-o-Matic</h1>
+    <h2>Using Data Science to Identify Iris Species</h2>
+    <p>Jeremy Peach<br/>Developing Data Products</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>The Problem</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Every day, people come across iris flowers as they go about their day-to-day lives.
+All of these people have the same question:  What is the species of this iris?</p>
+
+<p><img src="http://vignette2.wikia.nocookie.net/fantendo/images/b/bb/Royalty-free-confused-clipart-illustration-215196.png" style="width: 45%;" />
+<img src="http://www.twofrog.com/images/iris38a.jpg" style="width: 45%;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>The Solution</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Using data science, we can help people solve this daunting problem that has wrecked so many lives.</p>
+
+<p>We can use data that has been gathered about different species of irises
+to build a prediction model.</p>
+
+<p>Users will enter the length and width of the iris they&#39;ve found.  These
+measurements will be put into the model, and the species of the iris
+will be determined based on irises that have similar measurements.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>The Data</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The R programming language already contains a data set with iris measurements.
+This data was collected and published by Edgar Anderson in 1935.</p>
+
+<p>The dataset contains 150 observations of data.</p>
+
+<p>The following table shows which species are included in the data set and how
+many observations there are for each species:</p>
+
+<pre><code class="r">table(iris$Species)
+</code></pre>
+
+<pre><code>## 
+##     setosa versicolor  virginica 
+##         50         50         50
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Potential Pitfalls</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Unfortunately, this solution will not be perfect.  Here are some potential
+pitfalls that might prevent the application from being as successful as we hope.</p>
+
+<ol>
+<li><p>The data is 80 years old.  The
+world has changed a great deal since the data was gathered.  Nuclear weapons
+have been invented, and they may have released radiation into the atmosphere.  This could
+cause the modern irises to mutate and become much larger than members of the
+same species many years ago.</p></li>
+<li><p>The data set only includes information for 3 different species.
+People are likely to encounter irises of a species not included in the data set.
+In those cases, the Iris-o-Matic application will not be able to help them.</p></li>
+<li><p>The iris measurements in the data set are recorded in centimeters.  Most
+people in the U.S. do not know how to use the Metric System so this application
+will not be able to help them.</p></li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='The Problem'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='The Solution'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='The Data'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Potential Pitfalls'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
