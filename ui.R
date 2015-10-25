@@ -5,7 +5,7 @@ shinyUI(pageWithSidebar(
     sidebarPanel(
        p("Like most people, you probably see irises every day and wonder, \"What species is that?\" This tool can help you find the answer!"),
        h3("Instructions"),
-       p("To use the tool, simply measure the width and length of the petal of an iris.  Then enter the measurements in the input fields provided.  Click the \"Go!\" button and the species will be automatically determined for you!"),
+       p("To use the tool, simply measure the width and length of the petal of an iris.  Then enter the measurements in the input fields provided.  The species will be automatically determined for you!"),
        h4("Notes"),
        tags$ul(
            tags$li("All measurements must be specified in centimeters."),
